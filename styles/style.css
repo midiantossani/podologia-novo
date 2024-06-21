@@ -65,31 +65,29 @@ header {
 }
 
 header nav {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: left;
-  justify-content: left;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  padding: 1rem;
 }
 
 header nav ul {
   display: flex;
-  align-items: right;
-  justify-content: space-evenly;
-  padding: 1rem 0;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  /* padding: 1rem 0; */
 }
-
-/* header nav ul li + li {
-  margin-left: 6rem;
-} */
 
 header nav ul li a {
   color: var(--bg-color);
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 header nav img {
-  max-width: 20%;
-  margin: 1rem auto 0 auto;
+  max-width: 10%;
+  /* margin: 0 auto; */
 }
 
 .home {
@@ -143,7 +141,7 @@ header nav img {
   position: relative;
   height: auto;
   background-color: var(--bg-color);
-  padding: 8rem 3rem 2rem 3rem;
+  padding: 10rem 3rem 2rem 3rem;
   z-index: 1;
   overflow: hidden;
 }
@@ -219,6 +217,10 @@ div.divider {
   margin-bottom: 5rem;
 }
 
+.services .services-content {
+  padding: 4rem 0;
+}
+
 .services .services-content .services-card {
   display: flex;
   flex-direction: column;
@@ -258,7 +260,7 @@ div.divider {
 }
 
 .services .services-content .services-card > article h3 {
-  margin-top: 0.5rem;
+  
   color: var(--text);
   font-size: 1.4rem;
   font-weight: 400;
@@ -267,7 +269,7 @@ div.divider {
 .services .services-content .services-card > article p {
   margin: 10px 0px 20px 0;
   color: var(--text);
-  line-height: 1.2rem;
+  line-height: 1.1rem;
   font-size: 0.9rem;
 }
 
