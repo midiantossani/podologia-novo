@@ -128,7 +128,7 @@ header nav img {
   background-color: var(--terracotta);
   color: var(--bg-color);
   font-weight: 600;
-  border: none;
+  border: 1px solid #37373781;
   display: block;
   margin: 1rem auto;
   cursor: pointer;
@@ -165,11 +165,11 @@ header nav img {
 }
 
 .about-content h2 {
-  margin: 3rem 0;
+  margin: 0 0 5rem 0;
   text-align: center;
 }
 
-.about-text img {
+.about-text > img.professional {
   max-width: 70%;
   display: block;
   margin: 0 auto;
@@ -177,8 +177,10 @@ header nav img {
   border: 1px solid var(--border-gray);
 }
 
+ 
 .about-text h3 {
   font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .about-text {
@@ -189,14 +191,14 @@ header nav img {
   text-align: center;
 }
 
-div.about-social {
+.about-content .about-text div.about-social {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
 }
 
-.about-social a img {
+.about-content .about-text div.about-social a img {
   width: 60%;
   height: 60%;
 }
@@ -204,17 +206,17 @@ div.about-social {
 div.divider {
   width: 100%;
   display: block;
-  margin: 10rem auto 0 auto;
+  margin: 8rem auto 0 auto;
 }
 
 .services {
   height: auto;
   background-color: var(--bg-color);
-  padding: 8rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 2rem 3rem;
 }
 
 .services h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .services .services-content .services-card {
@@ -256,14 +258,14 @@ div.divider {
 }
 
 .services .services-content .services-card > article h3 {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--text);
   font-size: 1.4rem;
   font-weight: 400;
 }
 
 .services .services-content .services-card > article p {
-  margin: 20px 0px;
+  margin: 10px 0px 20px 0;
   color: var(--text);
   line-height: 1.2rem;
   font-size: 0.9rem;
@@ -276,16 +278,17 @@ div.divider {
   position: relative;
   font-size: 1rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .depoimentos {
   height: auto;
   background-color: var(--bg-color);
-  padding: 8rem 3rem 2rem 3rem;
+  padding: 6rem 3rem 8rem 3rem;
 }
 
 .depoimentos h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .depoimentos .depoimentos-content .depoimentos-card {
@@ -299,6 +302,7 @@ div.divider {
   overflow: hidden;
   height: auto;
   padding: 1rem;
+  /* background-color: orange; */
   /* box-sizing: border-box; */
 }
 
@@ -312,7 +316,7 @@ div.divider {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .depoimentos .depoimentos-content .depoimentos-card > article .card-stars {
@@ -413,7 +417,7 @@ div.divider {
   margin: 2rem auto 0 auto;
 }
 
-.footer  {
+.footer {
   height: auto;
   font-size: 1.1rem;
   background-color: var(--border);
